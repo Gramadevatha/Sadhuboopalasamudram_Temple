@@ -62,13 +62,20 @@
 
     .hero {
       text-align: center;
-      background-image: url('Temple.jpg');
-      background-size: cover;
-      background-position: center;
-      color: #fff;
-      padding: 4rem 1rem;
-      border-radius: 10px;
-      box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 4rem 1rem;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+  animation: changeBackground 5s infinite alternate;
+}
+
+/* Animation that switches images every 5 seconds */
+@keyframes changeBackground {
+  0%   { background-image: url('Temple1.jpg'); }
+  50%  { background-image: url('Temple2.jpg'); }
+  100% { background-image: url('Temple1.jpg'); }
     }
 
     .hero h2 {
@@ -178,5 +185,6 @@
 </html>
 
  ​
+
 
 
