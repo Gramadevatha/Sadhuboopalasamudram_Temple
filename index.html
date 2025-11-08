@@ -108,6 +108,41 @@
       margin-top: 2rem;
       font-size: 0.9rem;
     }
+    #gallery {
+  padding: 2rem 1rem;
+  background-color: #fff7e6;
+  text-align: center;
+}
+
+.event-block {
+  margin-bottom: 2.5rem;
+}
+
+.event-block h3 {
+  color: #a05a00;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.gallery-grid img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
 
     /* Responsive */
     @media (max-width: 600px) {
@@ -147,7 +182,7 @@
       The village is home to three prominent temples — each representing divine grace and timeless heritage.
       Kasi Vishwanathar and Visalatchi Temple (Shivan Temple)
       Sri Pattabhi Ramar Temple (Perumal Temple)
-      Pidari Amman Temple, revered as Himachalambika / Panni Vizhundha Amman and Sigilli Karuppu.
+      Pidari Amman Temple, revered as Himachalambika / Panni Vizhundha Amman and Sagilli Karuppu.
       </p>
   </section>
 
@@ -171,7 +206,33 @@
 
   <section id="gallery">
     <h2 class="section-title">Gallery</h2>
-    <p>Photos of temple events and daily darshan coming soon.</p>
+    <p>Memories from our sacred events and celebrations</p>
+<!-- Festival Section -->
+  <div class="event-block">
+    <h3>Festivals</h3>
+    <div class="gallery-grid">
+      <img src="images/Festivals/Annabhishegam 2025/ANB1.jpg" alt="Annabhishegam">
+      <img src="images/Festivals/Annabhishegam 2025/ANB2.jpg" alt="Annabhishegam">
+       </div>
+  </div>
+    <!-- Daily Poojas Section -->
+  <div class="event-block">
+    <h3>Daily Poojas</h3>
+    <div class="gallery-grid">
+      <img src="images/Poojas/Pradhosham/Pradhosham1.jpg" alt="Pradhosham">
+      <img src="images/Poojas/Pradhosham/Pradhosham2.jpg" alt="Pradhosham">
+      <img src="images/Poojas/Pradhosham/Pradhosham3.jpg" alt="Pradhosham">
+    </div>
+  </div>
+    <!-- Temple Events Section -->
+  <div class="event-block">
+    <h3>Temple Events</h3>
+    <div class="gallery-grid">
+      <img src="images/TempleActivities/TA1.jpg" alt="Temple Work">
+      <img src="images/TempleActivities/TA2.jpg" alt="TEmple Work">
+    </div>
+  </div>
+</section>
   </section>
 
   <section id="Address">
@@ -201,6 +262,7 @@
 </html>
 
  ​
+
 
 
 
